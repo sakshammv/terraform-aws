@@ -45,7 +45,8 @@ variable "region" {
 #PROVIDER#
 
 provider "aws" {
-    region = "us-east-1"
     access_key = "AKIA2X2TR3V32GGCWY27"
     secret_key = "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"
+    region = "us-east-1"
+
 }
