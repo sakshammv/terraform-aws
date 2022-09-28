@@ -52,7 +52,7 @@ resource "aws_instance" "ec2_public" {
 #NGINIX INSTALL#
 
   provisioner "file" {
-    source      = "~/modules/ec2/ngnix_install.sh"
+    source      = "/home/sigmoid/Desktop/tfaws/modules/ec2/ngnix_install.sh"
     destination = "/tmp/ngnix_install.sh"
 
     connection {
