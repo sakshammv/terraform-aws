@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    environment {
+        AWS_SECRETS  = credentials('aws_creds')
+    }
     
     tools {
         terraform 'terraform-aws'
